@@ -1,0 +1,501 @@
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    padding: 0.5rem 1.3rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    cursor: pointer;
+    outline: none;
+    transition: .5s ease;
+    border-radius: 4rem;
+    box-shadow: 0px 0px 7px #4CB1DC;
+    border: none;
+}
+.btn:hover{
+    transform: scale(1.05);
+}
+.strong{
+    color: var(--main-color);
+}
+h1.titulo-logo{
+    font-size: 1.7rem;
+}
+h2.titulo{
+    font-size: 2.5rem;
+}
+i{
+    color: var(--main-color);
+    padding: 3px;
+    border-radius: 50%;
+}
+
+
+body .topo{
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 10%;
+    border-bottom: 50px;
+    z-index: 100;
+}
+
+.topo.bordaHeader{
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.topo .titulo{
+    font-size: 25px;
+}
+
+.topo .menu-icon{
+    color: var(--text-color);
+    display: none;
+    font-size: 3.6rem;
+}
+
+.topo .nav-lista{
+    display: flex;
+    justify-content: space-evenly;
+    width: 45%;
+    padding: 5px;
+}
+
+.topo .nav-lista .nav-item{
+    padding: 1px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.nav-lista .nav-item:hover,
+.nav-lista .nav-item.ativo{
+    color: var(--main-color);
+}
+
+
+body .area-home{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 10rem 10%;
+}
+
+.area-home .portfolio-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.area-home .portfolio-info .info-perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.portfolio-info .info-perfil h1{
+    font-size: 2.5rem;
+}
+
+.portfolio-info .info-perfil h3{
+    font-size: 2rem;
+}
+
+.area-home .portfolio-info .resumo-profissional{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.area-home .portfolio-info .port-redes-sociais{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    width: 40%;
+}
+
+.portfolio-info .port-redes-sociais i{
+    font-size: 1.6rem;
+    box-shadow: 0 0 7px;
+    border: solid 1px;
+    transition: .5s ease;
+}
+.portfolio-info .port-redes-sociais i:hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 7px var(--main-color);
+    border: none;
+}
+
+.area-home .portfolio-foto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+}
+
+.area-home .portfolio-foto .img-portfolio{
+    background-position: center;
+    background-size: cover;
+    height: 360px;
+    width: 320px;
+    border-radius: 50%;
+    border: solid 2px #4CB1DC;
+    box-shadow: 0px 7px 10px #4CB1DC;
+}
+
+
+body .area-sobre{
+    background: var(--second-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    min-height: 100vh;
+    width: 100%;
+    padding: 10px 10%;
+}
+
+.area-sobre .sobre-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0 0 10px var(--main-color);
+    border-radius: 50%;
+    border: solid 5px var(--main-color);
+}
+
+.area-sobre .sobre-img .img{
+    border-radius: 50%;
+}
+
+.area-sobre .sobre-conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.area-sobre .sobre-conteudo h3{
+    font-size: 1.8rem;
+}
+
+.area-sobre .sobre-conteudo p{
+    text-align: justify;
+    margin: 2rem 0 3rem;
+}
+
+
+body .area-habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10% 10%;
+}
+
+.area-habilidades h2{
+    margin-bottom: 5rem;
+}
+
+.area-habilidades .habilidades-conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.area-habilidades .habilidades-conteudo .habilidades-box{
+    background: var(--second-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 30%;
+    text-align: center;
+    padding: 2rem;
+    transition: .3s ease;
+    border-radius: 2rem;
+}
+.area-habilidades .habilidades-conteudo .habilidades-box:hover{
+    transform: scale(1.03);
+}
+
+.habilidades-conteudo .habilidades-box i{
+    font-size: 1.7rem;
+    border: solid 2px;
+}
+
+.habilidades-conteudo .habilidades-box h3{
+    font-size: 1.5rem;
+    width: 90%;
+}
+
+
+body .area-portfolio{
+    background: var(--second-bg-color);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    padding: 10% 10%;
+}
+
+.area-portfolio .titulo{
+    margin-bottom: 4rem;
+}
+
+.area-portfolio .portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.portfolio-container .portfolio-box{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    animation: boxPortfolio .5s ease-in-out;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+}
+
+.portfolio-container .box-oculto{
+    display: none;
+    animation: esconderProjetos .5s ease-in-out;
+}
+.portfolio-container .box-visivel{
+    display: block;
+}
+
+.portfolio-container .portfolio-box img.box{
+    height: 200px;
+    width: 100%;
+    transition: .3s ease-in-out;
+}
+.portfolio-container .portfolio-box:hover img.box{
+    transform: scale(1.05);
+}
+
+.portfolio-container .portfolio-box .portfolio-info{
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color), var(--main-color));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem;
+    text-align: center;
+    transition: .5s ease-in-out;
+    transform: translateY(100%);
+}
+.portfolio-container .portfolio-box:hover .portfolio-info{
+    transform: translateX(0);
+}
+
+.portfolio-box .portfolio-info h4{
+    color: var(--text-color);
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.portfolio-box .portfolio-info p{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.portfolio-box .portfolio-info i{
+    background: var(--bg-color);
+    color: var(--main-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-top: 5px;
+    font-size: 1rem;
+    box-shadow: 0 0 7px var(--bg-color);
+    transition: .3s ease-in-out;
+}
+.portfolio-box .portfolio-info i:hover{
+    transform: scale(1.10);
+}
+
+.area-portfolio .mostrar-projetos,
+.area-portfolio .esconder-projetos{
+    position: absolute;
+    bottom: 10%;
+    padding: 5px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+}
+.area-portfolio .mostrar-projetos:hover,
+.area-portfolio .esconder-projetos:hover{
+    background: var(--bg-color);
+}
+
+.area-portfolio .mostrar-projetos i,
+.area-portfolio .esconder-projetos i{
+    font-size: 1.2rem;
+}
+
+.area-portfolio .btn-oculto{
+    display: none;
+}
+.area-portfolio .btn-visivel{
+    display: block;
+}
+
+body .area-estudos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10% 10%;
+}
+
+.area-estudos .titulo{
+    margin-bottom: 4rem;
+}
+
+.area-estudos .estudos-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.estudos-container .estudos-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+
+}
+
+.estudos-container .estudos-box img{
+    height: 200px;
+    width: 100%;
+    transition: .3s ease-in-out;
+}
+.estudos-container .estudos-box:hover img{
+    transform: scale(1.05);
+}
+
+.estudos-container .estudos-box .estudos-info{
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color), var(--main-color));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem;
+    text-align: center;
+    transition: .5s ease-in-out;
+    transform: translateY(100%);
+}
+.estudos-container .estudos-box:hover .estudos-info{
+    transform: translateX(0);
+}
+
+.estudos-box .estudos-info h4{
+    color: var(--text-color);
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.estudos-box .estudos-info p{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.estudos-box .estudos-info i{
+    background: var(--bg-color);
+    color: var(--main-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-top: 5px;
+    font-size: 1.2rem;
+    box-shadow: 0 0 7px var(--bg-color);
+    transition: .3s ease-in-out;
+}
+.estudos-box .estudos-info i:hover{
+    transform: scale(1.10);
+}
+
+body .area-rodape{
+    background: var(--second-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    padding: 1% 10%;
+    border-top: solid 1px var(--bg-color);
+}
+
+.area-rodape .icon-topo a{
+    background: var(--main-color);
+    height: 5rem;
+    width: 5rem;
+    padding: 5px;
+    transition: .3s ease-in-out;
+    border-radius: 50%;
+}
+
+.area-rodape .icon-topo a:hover{
+    box-shadow: 0 0 5px var(--main-color);
+}
+
+.area-rodape .icon-topo i{
+    color: var(--text-color);
+}

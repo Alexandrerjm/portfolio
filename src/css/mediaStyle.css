@@ -1,0 +1,173 @@
+@keyframes boxPortfolio {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes esconderProjetos {
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
+
+@media (max-width: 1280px){
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px){
+    .topo{
+        padding: 2rem 3%;
+    }
+
+    section{
+        padding: 10rem 3% 2rem;
+    }
+
+    .rodape{
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 768px){
+    #menu-icon{
+        display: block;
+    }
+
+    .topo{
+        position: relative;
+    }
+
+    .topo .nav-lista{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        padding: 2rem 3%;
+        background: var(--bg-color);
+        box-shadow: 0 5px 0 rgba(0, 0, 0, .2);
+    }
+    .topo .nav-lista.active{
+        display: flex;
+        gap: 1.5rem;
+    }
+    
+    .topo .nav-lista.active a{
+        display: block;
+        font-size: 2.2rem;
+        margin-left: 5.5rem;
+    }
+
+    .area-home .portfolio-info{
+        width: 65%;
+    }
+
+    .sobre-img{
+        width: 40%;
+    }
+
+    .sobre-img .img{
+        width: 100%;
+    }
+
+    .sobre-conteudo{
+        width: 60%;
+    }
+
+    .area-portfolio .esconder-projetos{
+        bottom: 7%;
+    }
+}
+
+@media (max-width: 580px){
+    .area-home .portfolio-info{
+        width: 80%;
+    }
+
+    .area-habilidades .habilidades-conteudo .habilidades-box{
+        width: 45%;
+    }
+
+    .portfolio-container .portfolio-box img.box{
+        height: 150px;
+    }
+
+    .area-portfolio .esconder-projetos,
+    .area-portfolio .mostrar-projetos{
+        bottom: 0;
+    }
+
+    .estudos-container .estudos-box img{
+        height: 150px;
+    }
+}
+
+@media (max-width: 375px){
+    .topo .nav-lista.active a{
+        display: block;
+        font-size: 2.2rem;
+        margin-left: 3rem;
+    }
+
+    .area-home .portfolio-info{
+        width: 100%;
+    }
+
+    .portfolio-info .info-perfil h1{
+        font-size: 2.3rem;
+    }
+
+    .portfolio-info .info-perfil h3{
+        font-size: 1.7rem;
+    }
+
+    .area-sobre{
+        flex-direction: column;
+    }
+
+    .area-sobre .sobre-img{
+        width: 70%;
+    }
+
+    .area-sobre .sobre-img .img{
+        width: 100%;
+    }
+
+    .area-sobre .sobre-conteudo{
+        align-items: center;
+        width: 100%;
+    }
+
+    .area-habilidades .habilidades-conteudo{
+        flex-direction: column;
+    }
+
+    .area-habilidades .habilidades-conteudo .habilidades-box{
+        width: 100%;
+    }
+
+    .area-portfolio .portfolio-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .area-estudos .estudos-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .area-estudos .titulo{
+        text-align: center;
+    }
+
+}
