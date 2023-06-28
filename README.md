@@ -1,2 +1,2 @@
 # portfolio
-Meu portfolio feito com Html, Css e Javascript
+Meu portfolio desenvolvido com Html, Css e Javascript
