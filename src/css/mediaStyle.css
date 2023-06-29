@@ -91,7 +91,7 @@
     }
 }
 
-@media (max-width: 580px){
+@media (max-width: 620px){
     .area-home .portfolio-info{
         width: 80%;
     }
@@ -114,7 +114,7 @@
     }
 }
 
-@media (max-width: 375px){
+@media (max-width: 502px){
     .topo .nav-lista.active a{
         display: block;
         font-size: 2.2rem;
