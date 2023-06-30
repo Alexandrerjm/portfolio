@@ -25,6 +25,9 @@
 }
 
 @media (max-width: 991px){
+    .indicador-scroll{
+        top: 62px;
+    }
     .topo{
         padding: 2rem 3%;
     }
@@ -39,6 +42,9 @@
 }
 
 @media (max-width: 768px){
+    .indicador-scroll{
+        top: 75px;
+    }
     #menu-icon{
         display: block;
     }
