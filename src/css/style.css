@@ -11,6 +11,34 @@ body{
     height: 100vh;
     width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: auto;
+}
+
+::-webkit-scrollbar{
+    background: #fff;
+    width: 15px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.indicador-scroll{
+    background: var(--main-color);
+    height: .35rem;
+    width: 0;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    z-index: 100;
 }
 
 .btn{
