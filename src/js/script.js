@@ -28,6 +28,13 @@ window.onscroll = () =>{
     navLista.classList.remove('active')
 }
 
+const maxHeight = document.body.scrollHeight - window.innerHeight
+window.addEventListener('scroll', () =>{
+    const porcentagem = (window.scrollY / maxHeight) * 100;
+
+    indicadorScroll.style.width = `${porcentagem}%`
+})
+
 let tituloEfeito = new Typed('.titulo-perfil', {
     strings : ['Html5', 'Css3', 'Javascript'],
     loop : true,
