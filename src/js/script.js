@@ -4,6 +4,7 @@ let btnMostrarProjetos = document.querySelector('.mostrar-projetos');
 let btnEsconderProjetos = document.querySelector('.esconder-projetos');
 let menuIcon = document.querySelector('#menu-icon');
 let navLista = document.querySelector('.nav-lista');
+const indicadorScroll = document.querySelector('.indicador-scroll');
 
 window.onscroll = () =>{
     sections.forEach(section => {
